@@ -1,0 +1,26 @@
+{
+  "name": "frontender-nl",
+  "version": "0.0.1",
+  "description": "Website frontender.nl",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run build:clean && npm run build:copy",
+    "build:clean": "rm -rf build && mkdir build",
+    "build:copy": "cp index.html build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludder/frontender-nl.git"
+  },
+  "keywords": [
+    "html",
+    "frontend"
+  ],
+  "author": "Tom Greuter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludder/frontender-nl/issues"
+  },
+  "homepage": "https://github.com/ludder/frontender-nl#readme"
+}
