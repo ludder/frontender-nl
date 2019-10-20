@@ -4,7 +4,8 @@
   "description": "Website frontender.nl",
   "main": "dist/index.html",
   "scripts": {
-    "build": "run-s build:*",
+    "formerbuild": "run-s build:*",
+    "build": "npm run build:clean && npm run build:copy && npm run build:fonts",
     "build:clean": "rm -rf dist && mkdir dist",
     "build:copy": "cp src/index.html dist",
     "build:fonts": "subfont -i dist/index.html",
