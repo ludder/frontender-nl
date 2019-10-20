@@ -5,10 +5,10 @@
   "main": "dist/index.html",
   "scripts": {
     "formerbuild": "run-s build:*",
-    "make": "npm run make:clean && npm run make:copy && npm run make:fonts",
-    "make:clean": "rm -rf dist && mkdir dist",
-    "make:copy": "cp src/index.html dist",
-    "make:fonts": "subfont -i dist/index.html",
+    "build": "npm run build:clean && npm run build:copy && npm run build:fonts",
+    "build:clean": "rm -rf dist && mkdir dist",
+    "build:copy": "cp src/index.html dist",
+    "build:fonts": "subfont -i dist/index.html",
     "start": "reload --port 5555 --browser --dir src --watch-dir src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
