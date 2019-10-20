@@ -2,12 +2,12 @@
   "name": "frontender-nl",
   "version": "0.0.1",
   "description": "Website frontender.nl",
-  "main": "build/index.html",
+  "main": "dist/index.html",
   "scripts": {
     "build": "run-s build:*",
-    "build:clean": "rm -rf build && mkdir build",
-    "build:copy": "cp src/index.html build",
-    "build:fonts": "subfont -i build/index.html",
+    "build:clean": "rm -rf dist && mkdir dist",
+    "build:copy": "cp src/index.html dist",
+    "build:fonts": "subfont -i dist/index.html",
     "start": "reload --port 5555 --browser --dir src --watch-dir src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
